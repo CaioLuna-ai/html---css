@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicao dos fundos</title>
+
+<style>
+
+    /* 🔷 BLOCOS GRANDES (cover normal) */
+    .bloco {
+        background-image: url('imagens/wallpaper003 (1).jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    /* 🔷 POSIÇÕES DIFERENTES */
+    #q1 { background-position: left top; }
+    #q2 { background-position: left center; }
+    #q3 { background-position: right bottom; }
+    #q4 { background-position: center center; }
+
+    /* 🔥 GRID (AGORA ALINHA PERFEITO) */
+  .container-grade {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 10px;
+    width: max-content;
+    margin: 50px auto; /* 🔥 CENTRALIZA */
+}
+    /* 🔷 BLOCOS DO MOSAICO */
+    .bloco2 {
+        width: 200px;
+        height: 200px;
+        background-image: url('imagens/wallpaper002 (1).jpg');
+        
+
+        /* 🔥 ESSENCIAL PRA FUNCIONAR */
+        background-size: 400px 400px;
+
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+
+    /* 🔷 POSIÇÕES DO MOSAICO (QUADRICULADO PERFEITO) */
+    #q5 { background-position: left top; }
+    #q6 { background-position: right top; }
+    #q7 { background-position: left bottom; }
+    #q8 { background-position: right bottom; }
+
+</style>
+</head>
+
+<body>
+
+    <!-- 🔷 BLOCOS GRANDES -->
+    <div class="bloco" id="q1"></div>
+    <div class="bloco" id="q2"></div>
+    <div class="bloco" id="q3"></div>
+    <div class="bloco" id="q4"></div>
+
+    <!-- 🔥 MOSAICO 2x2 -->
+    <div class="container-grade">
+        <div class="bloco2" id="q5"></div>
+        <div class="bloco2" id="q6"></div>
+        <div class="bloco2" id="q7"></div>
+        <div class="bloco2" id="q8"></div>
+    </div>
+
+</body>
+</html>
